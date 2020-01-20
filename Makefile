@@ -15,5 +15,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 .PHONY: clean
 clean:
+	@echo "rm -rf $(OBJ_FILES)"
 	@rm -rf $(OBJ_FILES)
+	@echo "rm -rf build"
 	@rm -rf build
